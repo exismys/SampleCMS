@@ -1,5 +1,12 @@
 extends layout
 
+block extraHeadElements 
+  link(rel="stylesheet", type="text/css", href="stylesheets/index.css")
+
+
 block content
-  h1= title
-  p Welcome to #{title}
+  article(class="intro")
+    h2 Who am I?
+    p Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    p Optio voluptatum maxime, dolorum dolores sit voluptatibus delectus, ipsam error consequuntur reiciendis, enim laboriosam.
+    p Ipsa dolorum eaque delectus officia eligendi labore neque?

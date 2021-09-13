@@ -1,0 +1,10 @@
+article h2 {
+    padding-bottom: 16px;
+    font-family: arial;
+    font-size: 40px;
+}
+
+article p {
+    font-family: arial;
+    padding-bottom: 8px;
+}
