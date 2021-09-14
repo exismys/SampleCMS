@@ -26,11 +26,6 @@ a {
   font-family: arial;
   font-weight: bolder;
   font-size: 1.25em;
-  transition: scale 200ms;
-}
-
-#nav-toggler:hover {
-  transform: scale(1.5, 1.5);
 }
 
 nav {
@@ -44,11 +39,11 @@ nav ul {
   list-style-type: none;
   background-color: #C8C8C8;
   margin-top: 8px;
-  box-shadow: 0 0 24px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 4px 4px 24px 2px rgba(0, 0, 0, 0.8);
   text-align: center;
   text-transform: uppercase;
   width: 128px;
-  transition: width 1000ms;
+  transition: width 500ms;
   overflow: hidden;
   border-radius: 0 32px 32px 0;
 }
@@ -95,12 +90,6 @@ footer {
 }
 
 @media only screen and (min-width: 1000px) {
-  nav ul {
-    width: 1000px;
-    padding-left: 0;
-    margin: auto;
-  }
-
   main {
     width: 1000px;
     margin: auto;
