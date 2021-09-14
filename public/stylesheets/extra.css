@@ -1,0 +1,33 @@
+nav {
+    background-color: rgba(12, 12, 12, 1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav a {
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    color: #ddd;
+    font-family: arial;
+  }
+  
+  nav a:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  nav a.active {
+    background-color: #202020;
+  }
