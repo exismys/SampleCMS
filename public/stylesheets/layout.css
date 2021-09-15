@@ -9,8 +9,8 @@ html {
 }
 
 body {
-  background-color: white;
-  color: #C8C8C8;
+  background-color: #999999;
+  color: black;
 }
 
 a {
@@ -18,7 +18,7 @@ a {
 }
 
 #nav-toggler {
-  background-color: #C8C8C8;
+  background-color: #202020;
   width: 40px;
   height: 40px;
   padding: 8px;
@@ -26,30 +26,35 @@ a {
   font-family: arial;
   font-weight: bolder;
   font-size: 1.25em;
+  color: white;
 }
 
 nav {
   position: fixed;
   top: 50%;
-  transform: translate(0, -60px);
-  color: black;
+  transform: translate(0, -125px);
 }
 
 nav ul {
   list-style-type: none;
-  background-color: #C8C8C8;
+  background-color: rgba(12, 12, 12, 1);
   margin-top: 8px;
   box-shadow: 4px 4px 24px 2px rgba(0, 0, 0, 0.8);
   text-align: center;
   text-transform: uppercase;
-  width: 128px;
-  transition: width 500ms;
+  width: 120px;
+  height: 200px;
+  transition: width 250ms ease-in;
   overflow: hidden;
-  border-radius: 0 32px 32px 0;
+  border-radius: 0 4px 4px 0;
+  border: 2px solid #202020;
+  border-left: 0;
 }
 
 nav ul.hidden {
   width: 0px;
+  border: 0;
+  box-shadow: 0 0 0 0;
 }
 
 nav a {
@@ -57,7 +62,7 @@ nav a {
   display: block;
   padding: 8px;
   font-family: arial;
-  color: black;
+  color: white;
 }
 
 nav a:hover {
@@ -83,6 +88,7 @@ footer {
   padding: 8px;
   font-family: arial;
   font-size: 0.7em;
+  color: #a8a8a8
 }
 
 #copyright {
