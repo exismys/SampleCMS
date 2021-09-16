@@ -9,10 +9,11 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+require("dotenv").config();
+
 // mongoDB setup
 var mongoose = require('mongoose');
-let mongodbPassword = process.env.mongodb_password;
-var mongoDB = 'mongodb+srv://exismys:' + mongodbPassword + '@cluster0.ikahw.mongodb.net/Exismys?retryWrites=true&w=majority';
+var mongoDB = process.env.mongodb;
 mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));

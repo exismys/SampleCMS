@@ -1,7 +1,16 @@
+var Book = require("../models/blog");
 
 // Blog home page: shows all the blogs saved
 exports.blogList = function(req, res) {
-    res.render('blog');
+    Book.find({}, "title author date content").exec(
+        function(error, blog_lists) {
+            if (error) {
+                console.log("Error in retriving blogs!");
+            } else {
+                res.render("blog", {blogs: blog_lists});
+            }
+        }
+    );
 }
 
 // Shows the details of a specific blog
