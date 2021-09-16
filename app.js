@@ -9,6 +9,14 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+// mongoDB setup
+var mongoose = require('mongoose');
+let mongodbPassword = process.env.mongodb_password;
+var mongoDB = 'mongodb+srv://exismys:' + mongodbPassword + '@cluster0.ikahw.mongodb.net/Exismys?retryWrites=true&w=majority';
+mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');

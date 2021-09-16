@@ -3,7 +3,7 @@ var router = express.Router();
 
 // Importing controllers
 var blogController = require("../controllers/blogController");
-var projectController = require("../controllers/projectController")
+var projectController = require("../controllers/projectController");
 
 // Get home page: Main
 router.get('/', function(req, res, next) {

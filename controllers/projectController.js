@@ -1,6 +1,8 @@
 
 // Project home page: shows lists of projects
-exports.projectList = function(req, res) {}
+exports.projectList = function(req, res) {
+    res.render("projects");
+}
 
 // Shows details of a specific proje
 exports.projectDetail = function(req, res) {}
