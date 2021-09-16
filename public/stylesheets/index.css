@@ -3,7 +3,7 @@ article {
     padding: 16px;
     margin-top: 24px;
     background-color: rgba(12, 12, 12, 1);
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 article ul:last-child {
