@@ -1,0 +1,14 @@
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.content {
+    clear: both;
+    line-height: 1.2em;
+    height: 3.6em;
+    overflow: hidden;
+}
