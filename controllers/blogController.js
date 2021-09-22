@@ -27,7 +27,9 @@ exports.blogDetail = function(req, res) {
 }
 
 // Create a new blog
-exports.createBlogGet = function(req, res) {}
+exports.createBlogGet = function(req, res) {
+    res.render("createBlog");
+}
 
 // Shows the newly created blog
 exports.createBlogPost = function(req, res) {}

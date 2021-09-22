@@ -5,6 +5,8 @@ block extraHeadElements
     link(rel="stylesheet", type="text/css", href="/stylesheets/blog.css")
 
 block mainContent
+    article
+        a(href="/blog/create") Create New Blog
     each blog in blogs
         article
             h2 #{blog.title} 

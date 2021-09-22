@@ -1,0 +1,17 @@
+extends layout
+
+block extraHeadElements
+
+block mainContent
+    form(action="", method="POST", id="createForm")
+        label(for="title") Title 
+        br
+        input(type="text" id="title")
+        br
+        label(for="content") Content
+        br
+        textarea(name="content", cols="30", rows="10", form="createForm" id="content") 
+        br
+        input(type="submit")
+    
+
