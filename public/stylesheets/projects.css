@@ -1,0 +1,5 @@
+.projectLinks {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+}

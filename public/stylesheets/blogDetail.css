@@ -6,6 +6,17 @@
     float: right;
 }
 
+.dateAndAuthor {
+    font-style: italic;
+    font-size: 0.7em;
+}
+
 .content {
     clear: both;
+    text-align: justify;
+    margin: 36px 0 0 0;
+}
+
+.content p {
+    padding: 0;
 }

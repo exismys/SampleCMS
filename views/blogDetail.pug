@@ -11,4 +11,4 @@ block mainContent
                 p(class="left") #{blog.author} 
                 p(class="right") #{blog.date.toString().slice(0, 15)} 
             div(class="content") 
-                p #{blog.content}
+                p !{blog.content}

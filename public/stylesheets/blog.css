@@ -6,9 +6,19 @@
     float: right;
 }
 
+.dateAndAuthor {
+    font-style: italic;
+    font-size: 0.7em;
+}
+
 .content {
     clear: both;
     line-height: 1.2em;
     height: 3.6em;
     overflow: hidden;
+    margin: 36px 0 0 0;
+}
+
+.content p {
+    padding: 0;
 }

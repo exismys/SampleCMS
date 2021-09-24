@@ -1,4 +1,15 @@
 extends layout
 
+block extraHeadElements 
+    link(rel="stylesheet", type="text/css", href="/stylesheets/index.css")
+    link(rel="stylesheet", type="text/css", href="/stylesheets/projects.css")
+
 block mainContent 
-    p Page under construction
+    h1 Projects
+    article
+        h2(class="projectTitle") Title 
+        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos quidem, consequuntur omnis magnam voluptas saepe molestias magni? Temporibus commodi sunt vitae et labore totam id minus? Aliquid magni sapiente neque!
+        section(class="projectLinks")
+            a(href="#" class="leftLink") View Project 
+            a(href="#" class="rightLink") View Code
+        p(class="clear")
