@@ -32,7 +32,10 @@ exports.createBlogGet = function(req, res) {
 }
 
 // Shows the newly created blog
-exports.createBlogPost = function(req, res) {}
+exports.createBlogPost = function(req, res) {
+    console.log(req);
+    res.send("hello world")
+}
 
 // Delete a specific blog
 exports.deleteBlogGet = function(req, res) {}

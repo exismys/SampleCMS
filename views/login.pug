@@ -1,0 +1,16 @@
+extends layout
+
+block extraHeadElements
+    script(src="/javascripts/login.js" defer) 
+
+block mainContent
+    form(id="login-form")
+        label(for="username") Username:
+        br
+        input(name="username" type="text" id="username")
+        br
+        label(for="password") Password:
+        br
+        input(name="password" type="password" id="password") 
+        br
+        input(type="submit" value="Log In")

@@ -1,0 +1,16 @@
+extends layout
+
+block extraHeadElements
+
+block mainContent
+    form(method="POST", id="createForm")
+        label(for="username") Username:
+        br
+        input(name="username" type="text" id="username")
+        br
+        label(for="password") Password:
+        br
+        input(name="plainPassword" type="password" id="password") 
+        br
+        input(type="submit" value="Register")
+    
