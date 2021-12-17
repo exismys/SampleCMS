@@ -1,7 +1,7 @@
 extends layout
 
 block extraHeadElements
-    script(src="/javascripts/checkAuth.js" defer) 
+    script(src="/javascripts/checkAuth.js" type="module" defer) 
 
 block mainContent
     button(id='authbtn') Check Authorization
